@@ -1,17 +1,13 @@
-%define name 	mp3c
-%define version 0.31
-%define release %mkrel 1
-
 Summary: 	MP3 creator for audiocds with usage of CDDB
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Name: 		mp3c
+Version: 	0.31
+Release: 	%mkrel 2
 License: 	GPL
 Group: 		Sound
-Source: 	ftp://ftp.wspse.de/pub/linux/wspse/%{name}-%{version}.tar.bz2
 URL:		http://wspse.de/WSPse/Linux-MP3c.php3
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
+Source: 	ftp://ftp.wspse.de/pub/linux/wspse/%{name}-%{version}.tar.bz2
 BuildRequires:  ncurses-devel
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This program reads the TOC from audio CDs, gets the CDDB entry for it, 
@@ -38,8 +34,8 @@ cdparanoia.
 %make
 
 %install
-
 rm -rf $RPM_BUILD_ROOT
+
 %makeinstall
 
 %{find_lang} %{name}
@@ -53,4 +49,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README patches/cdparanoia.diff patches/encoder.diff TODO
 %{_bindir}/mp3c
 %{_mandir}/man1/mp3c.1*
-
