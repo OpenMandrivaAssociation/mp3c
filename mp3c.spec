@@ -7,7 +7,6 @@ Group: 		Sound
 URL:		http://wspse.de/WSPse/Linux-MP3c.php3
 Source: 	ftp://ftp.wspse.de/pub/linux/wspse/%{name}-%{version}.tar.bz2
 BuildRequires:  ncurses-devel
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This program reads the TOC from audio CDs, gets the CDDB entry for it, 
