@@ -1,7 +1,7 @@
 Summary: 	MP3 creator for audiocds with usage of CDDB
 Name: 		mp3c
 Version: 	0.31
-Release: 	%mkrel 2
+Release: 	%mkrel 3
 License: 	GPL
 Group: 		Sound
 URL:		http://wspse.de/WSPse/Linux-MP3c.php3
